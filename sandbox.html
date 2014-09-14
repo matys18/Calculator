@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+
+Iframe Sandbox, for security purposes. All calculations are passed to this file and evaluated, then sent back to the main enviroment.
+
+-->
+
+	<head>
+		<title>Calculator+ Sandbox</title>
+	</head>
+
+	<body>
+		<script>
+			window.addEventListener("message", function() {
+  					var calculated = eval(event.data);
+  					event.source.postMessage(calculated, '*');
+			});
+		</script>
+	</body>
+</html>

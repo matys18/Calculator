@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+Version 1.0 :: First Release
+
+Calculator+, a Google Chrome Extension by Matas kairaitis.
+Questions and request are to be sent to matas.kairaitis@gmail.com!
+For more information, and even source code visit http://www.mataskairaitis.com
+-->
+
+	<head>
+		<title>Calculator+</title>
+		<link rel="stylesheet" type="text/css" href="calculator.css">
+		<script src="jquery-1.11.1.min.js"></script>
+	</head>
+
+	<body>
+
+		<iframe id="mathFrame" src="sandbox.html"></iframe>
+		<div id="container">
+			<input dir="ltr" id="output" type="text" autofocus></input>
+			<div id="del" class="knopke">C</div>
+			<div id="div" class="knopke value">/</div>
+			<div id="mult" class="knopke value">*</div>
+			<div id="back" class="knopke">&#8656;</div>
+			<div id="7" class="knopke value">7</div>
+			<div id="8" class="knopke value">8</div>
+			<div id="9" class="knopke value">9</div>
+			<div id="minus" class="knopke value">-</div>
+			<div id="4" class="knopke value">4</div>
+			<div id="5" class="knopke value">5</div>
+			<div id="6" class="knopke value">6</div>
+			<div id="plus" class="knopke value">+</div>
+			<div id="1" class="knopke value">1</div>
+			<div id="2" class="knopke value">2</div>
+			<div id="3" class="knopke value">3</div>
+			<div id="bracket" class="knopke value">.</div>
+			<div id="0" class="knopke value">0</div>
+			<div id="dot" class="knopke value">(</div>
+			<div id="plusminus" class="knopke value">)</div>
+			<div id="equal" class="knopke">=</div>
+			<div class="clearBoth"></div>
+		</div>
+
+		<script src="calculator.js"></script>
+	</body>
+</html>

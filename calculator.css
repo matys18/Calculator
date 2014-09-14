@@ -1,0 +1,100 @@
+/*
+
+The main css file for the Calculator+ extension.
+All fonts and images used are royalty-free.
+	Fonts provided by: http://www.fontsquirrel.com/
+	Images provided by: http://www.flaticon.com/
+
+A css reset is absent, because the extension is designed to only work with Google Chrome.
+
+*/
+
+body {
+	margin:0;
+	padding:0;
+	font-family:main;
+}
+
+input {
+	width:190px;
+	height:35px;
+	margin:auto auto 5px auto;
+	overflow-x:scroll;
+	border:none;
+	border-bottom:1px solid lightgrey;
+	outline:none;
+	color:grey;
+	font-size:22px;
+	letter-spacing:2px;
+	word-spacing:2px;
+	font-family:main;
+	text-align:left;
+}
+
+@font-face {
+    font-family: 'main';
+    src: url('fonts/main/lmsans10-regular-webfont.eot');
+    src: url('fonts/main/lmsans10-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/main/lmsans10-regular-webfont.woff') format('woff'),
+         url('fonts/main/lmsans10-regular-webfont.ttf') format('truetype'),
+         url('fonts/main/lmsans10-regular-webfont.svg#latin_modern_sans10_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+::-webkit-input-placeholder {
+   opacity:0.6;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+#mathFrame {
+	display:none;
+}
+
+#container {
+	width:200px;
+	height:auto;
+	padding:5px;
+	margin-bottom:5px;
+	text-align:center;
+}
+
+.knopke {
+	height:15px;
+	width:15px;
+	display:inline;
+	float:left;
+	margin:2px;
+	padding:14px;
+	border:1px solid #EAEAEA;
+	color:grey;
+	text-align:center;
+	font-size:14px;
+	cursor:pointer;
+	-webkit-transition:0.2s;
+	-webkit-user-select: none;
+}
+
+.knopke:hover {
+	box-shadow:0px 0px 5px lightgrey;
+}
+
+.knopke:active {
+	box-shadow:0px 0px 5px grey;
+}
+
+#div, #mult, #back, #minus, #plus, #bracket {
+	background-color:#E8E8E8;
+}
+
+#equal {
+	background-color:#CCF5CC;
+}
+
+#del {
+	background-color:#FFEB99;
+}
